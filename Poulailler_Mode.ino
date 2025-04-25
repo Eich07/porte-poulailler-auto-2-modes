@@ -97,7 +97,7 @@ void fermeture() {
     digitalWrite(pontEnHPin1, LOW);
     digitalWrite(pontEnHPin2, HIGH);
     fdc_f = !digitalRead(FDC_F);
-    if (millis() - startTime > 4000) {
+    if (millis() - startTime > 4000) { //change the value as needed
       stop();
       porte_bloque = true;
       return;
