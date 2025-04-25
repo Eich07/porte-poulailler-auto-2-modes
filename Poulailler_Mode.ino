@@ -80,7 +80,7 @@ void ouverture() {
     digitalWrite(pontEnHPin1, HIGH);
     digitalWrite(pontEnHPin2, LOW);
     fdc_o = !digitalRead(FDC_O);
-    if (millis() - startTime > 4000) {
+    if (millis() - startTime > 4000) { //change the value as needed
       stop();
       porte_bloque = true;
       return;
